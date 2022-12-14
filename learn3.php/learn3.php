@@ -31,9 +31,9 @@
 
        (Rules for PHP variables) ::::::::::::::::::::::::::::::::
         1.string = 'text',
-         2.integer number =  2 ,
+        2.integer number =  2 ,
         3.float dicamil numbers = 3.14, 
-         4.boolean = true =1 or false = nothing ,
+        4.boolean = true =1 or false = nothing = x in web-browsers ,
         5.null = undefined variables!,
 
      - A variable starts with the $ sign, followed by the name
