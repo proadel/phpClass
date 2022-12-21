@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>learn17.php | </title>
+    <title>learn17.php |functions for Files in PHP</title>
 </head>
 <body>
-    <h1>Read Files in PHP</h1>
+    <h1>functions for Files in PHP</h1>
      <?php
-     // learn17.php | read Files in PHP
+     // learn17.php | functions for Files in PHP
      //------------------------------------------------
      //------------------------------------------------
      // First : readfile() function
@@ -113,7 +113,46 @@
              for more info
              https://www.php.net/manual/en/function.dirname.php
         */
+        //-----------------------------------------------------
+         //-----------------------------------------------------------
+        // 5th : PHP copy() Function
+        // The copy() function copies a file.
+        //Note: If the to_file file already exists, it will be overwritten.
+         // copy(from_file, to_file, context)
+         /* Parameter	    Description
+            from_file	    Required. Specifies the path to the file to copy 
+                          from
+            to_file	      Required. Specifies the path to the file to copy to
+            context	      Optional. Specifies a context resource created with 
+                          stream_context_create()
 
+         */
+        // example 5
+        echo "<h1>Example 5  PHP copy() Function</h1>", "<hr><br>";
+        #file_put_contents('copy17.txt','Welcome to php');
+        #copy('copy17.txt','copy17-2.txt');
+
+        //-----------------------------------------------------------
+        // 6th : PHP rename() Function
+        /* The rename() function renames a file or directory.
+             rename(old, new, context)
+             Example of Rename a directory + a file:
+             #rename("copy17.txt","pictures.txt");
+             #rename("/test/file1.txt","/home/docs/my_file.txt");
+             Parameter	Description
+             old	      Required. Specifies the file or directory to 
+                        be renamed
+             new	      Required. Specifies the new name for the file or 
+                        directory
+             context	  Optional. Specifies the context of the file handle. 
+                        Context is a set of options that can modify the 
+                        behavior of a stream
+        */
+        // example 6
+        echo "<h1>Example 6 | PHP rename() Function</h1>", "<br>";
+        #rename('','');
+
+        //--------------------------------------------------------
     //=========================================================================
     //=========================================================================
      ?>
