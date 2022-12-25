@@ -15,16 +15,70 @@
     // Example 1 : class and object creation
     // class create : ++public vs. privet var. class 
     //------------------------
-    echo " Example 1 - create an OOP class & object <hr><br>";
+    echo "Example 1 - create an OOP class & object <hr><br>";
     class name{
         public $color = 'red';
     }
     //--------------------------------------------------------------
     // here object create : the new is a cardinal sign for object . 
-    //=====================-----------------------------------------
+    //=====================-----------------------------------------------
     $p = new name();
-    echo $p -> color; // var after -> without $ | -> = go to. 
-    //--------------------------------------------------------------
+    echo $p -> color."<br><br>"; // var after -> without $ | -> = go to.
+    //--------------------------------------------------------------------
+    // Example 2 : function | class and object creation 
+    //------------------------
+    echo "Example 2 - create an OOP class & object <hr>"; 
+    class name2{
+        function welcome(){
+            echo "<h4>welcome to PHP - OOP learning Class</h4>";
+        }
+        function namee(){
+            echo "Student Name";
+        }
+        function agee(){
+            echo 43;
+        }
+    }
+    $printo = new name2();
+    $printo -> welcome();
+    echo "<br>";
+    $printo -> namee();
+    echo "<br>";
+    $printo -> agee();
+    //--------------------------------------------------------------------
+    // Example 3 : Father And Son | Inheritance in PHP 
+    //--------------------------------------------------------------------
+    /*
+    echo "Example 3 - Inheritance in PHP <hr>"; 
+    class father {
+        function f_mony(){
+            echo " + 1,000,000$";
+        }
+    }
+    class son extends father{
+        function s_mony(){
+            echo "200$";
+        }
+    }
+    class friend{
+        function f_mony(){
+            echo "3500$";
+        }
+    }
+
+    $fa = new father();
+    echo "Father Mony =";
+    $fa -> f_mony();
+    echo "<br>";
+    $sn = new son();
+    echo "Son Mony =";
+    $sn -> s_mony();
+    $sn -> f_mony();
+    echo "<br>";
+    $fr = new friend();
+    echo "Friend Mony = ";
+    $fr -> f_mony();
+    */
     ?>
     <!--  
         // learn28.php | OOP in PHP>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
