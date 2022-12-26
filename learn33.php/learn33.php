@@ -13,7 +13,7 @@
     <?php 
     //  learn33.php | PARAMETERS OOP
     //----------------------------------------------------------------------
-    // use parametrs in class OOP- PHP by __construct
+    // pass parametrs in class OOP- PHP by __construct or non-construct
     //
     // Example1-------------------------------------------------------------
     echo "Example 1 | use __construct to pass data into the class <br><br>";
@@ -23,7 +23,22 @@
         }
     }
     $x = new students('Student1' , 43);
-    //------------------------------------------------------
+    echo "<hr>";
+    //======================================================================================
+    // Example 2 | 
+    //--------------------------------------------------------------------------------------
+    echo "<br><br>Example 2 | use var non-constructable: pass data into the class <br><br>";
+    class empolyee{
+        function info ($nAme, $aGe){
+            echo "Empolyee Name: ".$nAme."<br>"."Empolyee Age: ".$aGe;
+        }
+    }
+    $y = new empolyee();
+    #$y -> info(); // ERROR Fatal error: Uncaught ArgumentCountError: Too few arguments to 
+    //-----------    function empolyee::info(), 0 passed .... etc.
+    // we should enter the parameters ... to resolve it .
+    $y -> info ('ADEL MD', 43);
+    //--------------------------------------------------------------------------------------
     // to see more 
     // https://www.php.net/manual/en/language.oop5.basic.php
     //======================================================
