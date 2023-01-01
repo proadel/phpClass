@@ -1,2 +1,2 @@
 # phpClass
-HTML CLASS - Course @ Kaizon - Sanaa, YEMEN
+PHP CLASS - Course @ Kaizon - Sanaa, YEMEN
