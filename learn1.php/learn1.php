@@ -26,7 +26,7 @@
     echo '<h2>welcome to PHP Class 2022</h2>';
     echo '<h3> echo : learn PHP is easy</h3>';
     
-    print ("print : Leats Study PHP 2022 <br>");
+    print ("print : Lets Study PHP 2022 <br>");
 
     echo 2 + 2 ,'<br>';
     echo "2+2 <br>";
